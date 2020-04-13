@@ -1,6 +1,5 @@
 all:
 	g++ main.cpp -o main
-	
-run:
-	main
-	
+	./main
+run_py:
+	python3 main.py

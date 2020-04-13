@@ -1,11 +1,13 @@
-# Лабораторная работа №5: Численное интегрирование
 
-Уважаемые студенты,
+Чтобы вычислить интеграл <img src="/tex/ade371891d4ebb13e80c07e9f76cd1cb.svg?invert_in_darkmode&sanitize=true" align=middle width=64.26953939999999pt height=47.89051739999998pt/> разложим подынтегральное выражение в ряд Маклорена.
 
-сделайте, пожалуйста, **fork** этого проекта, а затем (уже в своем проекте) сделайте его частным (*Private*).
+<p align="center"><img src="/tex/d9db5f9dd6032694ca27e3b50bc7e7b6.svg?invert_in_darkmode&sanitize=true" align=middle width=386.2915617pt height=44.90601885pt/></p>
 
-Также прошу в этой и следующих лабораторных работах прописывать в файл *Makefile* инструкции по сборке Вашего проекта. 
+Чтобы достичь точности интегрирования <img src="/tex/bb37d900187dc654deaf1940016b7001.svg?invert_in_darkmode&sanitize=true" align=middle width=62.848120499999986pt height=26.76175259999998pt/> необходимо, чтобы <img src="/tex/0b3eec32a506a19ee4a458164886ac1b.svg?invert_in_darkmode&sanitize=true" align=middle width=172.48511279999997pt height=19.1781018pt/> (<img src="/tex/3ba5876afed0e6f9cea0e3745896c5c1.svg?invert_in_darkmode&sanitize=true" align=middle width=32.829323999999986pt height=14.15524440000002pt/> - ошибка приближения, <img src="/tex/eb2b4e9815df036ed5b72cb96bb993c2.svg?invert_in_darkmode&sanitize=true" align=middle width=29.663782499999993pt height=14.15524440000002pt/> - ошибка вычисления интеграла). Чтобы <img src="/tex/32eb6aba302d2323f550dbbbf202ea8d.svg?invert_in_darkmode&sanitize=true" align=middle width=65.76065759999999pt height=38.81267940000002pt/> отбросим такие члены ряда, модуль которых меньше <img src="/tex/0f2df5612bd788abbcafd87190565dd6.svg?invert_in_darkmode&sanitize=true" align=middle width=8.219209349999996pt height=38.81267940000002pt/>. Погрешность интегрирования методом прямоугольников <img src="/tex/5b4d66f80153e0442f5dcba168075e8b.svg?invert_in_darkmode&sanitize=true" align=middle width=147.63039224999997pt height=49.3735638pt/>, где <img src="/tex/0c808c3123a0644491d4e83dc337fd5c.svg?invert_in_darkmode&sanitize=true" align=middle width=35.162808449999986pt height=24.7161288pt/> - максимальное значение производной, <img src="/tex/2ad9d098b937e46f9f58968551adac57.svg?invert_in_darkmode&sanitize=true" align=middle width=9.47111549999999pt height=22.831056599999986pt/> - шаг интегрирования, <img src="/tex/5f8c6707c3c404791835c4d82736cf4f.svg?invert_in_darkmode&sanitize=true" align=middle width=23.04983339999999pt height=22.831056599999986pt/> - границы интервала.
 
-Простейший образец *Makefile* есть в этом проекте. 
+<p align="center"><img src="/tex/1df9c219060fbc64d96803bf12759015.svg?invert_in_darkmode&sanitize=true" align=middle width=242.05350015pt height=34.7918142pt/></p>
 
-Подробнее о *make* и *Makefile* можно узнать, например, здесь: [https://habr.com/ru/post/155201/](https://habr.com/ru/post/155201/)
+<p align="center"><img src="/tex/dc521b7a1e02576508026124e0c4eaf1.svg?invert_in_darkmode&sanitize=true" align=middle width=554.1518796pt height=51.6443763pt/></p>
+
+<p align="center"><img src="/tex/52cebcec4f6f368db0f02b81d6b4bc54.svg?invert_in_darkmode&sanitize=true" align=middle width=207.57857835pt height=18.312383099999998pt/></p>
+
